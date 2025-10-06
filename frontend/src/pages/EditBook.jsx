@@ -16,7 +16,7 @@ const EditBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://BookstoreBackend-env.eba-ebdixpjc.ap-south-1.elasticbeanstalk.com/books/${id}`)
+    axios.get(`http://book-env.eba-xrv84pds.ap-south-1.elasticbeanstalk.com/books/${id}`)
     .then((response) => {
         setAuthor(response.data.author);
         setPublishYear(response.data.publishYear)
