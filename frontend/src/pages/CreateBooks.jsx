@@ -21,7 +21,7 @@ const CreateBooks = () => {
     };
     setLoading(true);
     axios
-      .post('http://BookstoreBackend-env.eba-ebdixpjc.ap-south-1.elasticbeanstalk.com/books', data)
+      .post('http://book-env.eba-xrv84pds.ap-south-1.elasticbeanstalk.com/books', data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Book Created successfully', { variant: 'success' });
