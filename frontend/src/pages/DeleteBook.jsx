@@ -14,7 +14,7 @@ const DeleteBook = () => {
   const handleDeleteBook = () => {
     setLoading(true);
     axios
-      .delete(`http://BookstoreBackend-env.eba-ebdixpjc.ap-south-1.elasticbeanstalk.com/books/${id}`)
+      .delete(`http://book-env.eba-xrv84pds.ap-south-1.elasticbeanstalk.com/books/${id}`)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Book Deleted successfully', { variant: 'success' });
